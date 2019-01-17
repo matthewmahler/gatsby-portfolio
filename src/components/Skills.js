@@ -18,15 +18,11 @@ const Skills = () => (
         javascript/jQuery, I excel in projects built with React, Express, Node,
         and MongoDB. I also recently picked up GraphQL as my API of choice.
       </p>
-      <ul>
+      <div className="lang">
         {photos.map((pic, i) => {
-          return (
-            <li key={i}>
-              <img src={pic} alt="" height="100" width="100" />
-            </li>
-          );
+          return <img src={pic} alt="" width="100%" key={i} />;
         })}
-      </ul>
+      </div>
     </div>
 
     <div className="eight columns main-col">

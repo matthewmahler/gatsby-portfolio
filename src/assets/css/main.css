@@ -217,7 +217,7 @@ body {
   font-weight: normal;
   font-size: 15px;
   line-height: 30px;
-  color: #838C95;
+  color: rgb(173, 187, 201);
 
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
@@ -1358,8 +1358,8 @@ header {
   height: 800px;
   min-height: 500px;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.7)), url(../images/header-background.jpg) no-repeat top center;
+  background: linear-gradient(rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8)), url(../images/header-background.jpg) no-repeat top center;
   background-size: cover !important;
   -webkit-background-size: cover !important;
   text-align: center;
@@ -1550,8 +1550,8 @@ ul#nav li.current a {
 /* ------------------------------------------------------------------ */
 
 #about {
-  background: linear-gradient(rgba(0, 0, 0, 0.85),
-    rgba(0, 0, 0, 0.85)), url(../images/about-background2.jpg) no-repeat top center;
+  background: linear-gradient(rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9)), url(../images/about-background2.jpg) no-repeat top center;
   background-size: cover !important;
   padding-top: 96px;
   padding-bottom: 66px;
@@ -1639,7 +1639,7 @@ ul#nav li.current a {
 }
 
 #resume h1 {
-  font: 24px/30px "opensans-bold", sans-serif;
+  font: 30px/36px "opensans-bold", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -1651,11 +1651,16 @@ ul#nav li.current a {
 }
 
 #resume h2 {
-  font: 18px/24px "opensans-bold", sans-serif;
+  font: 24px/30px "opensans-bold", sans-serif;
   color: #afafaf;
 }
 
 #resume h3 {
+  font: 20px/24px "opensans-bold", sans-serif;
+  color: #afafaf;
+}
+
+#resume h4 {
   font: 16px/20px "opensans-bold", sans-serif;
   color: #afafaf;
 }
@@ -1685,9 +1690,7 @@ ul#nav li.current a {
 .work ul li:hover {
   color: #39b1ff;
   font-size: 110%;
-
   transition: 0.1s;
-
 }
 
 #resume .info {
@@ -1710,6 +1713,13 @@ ul#nav li.current a {
 /*----------------------------------------------*/
 /*	Skill Bars
 /*----------------------------------------------*/
+.lang {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px
+}
+
+
 
 .bars {
   width: 95%;
@@ -2808,7 +2818,7 @@ footer .social li:first-child {
     width: 48px;
     height: 48px;
     text-align: left;
-    background-color: #CC5200;
+    background-color: #39b1ff;
     position: relative;
     border: none;
     float: right;

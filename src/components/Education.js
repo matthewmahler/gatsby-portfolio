@@ -42,7 +42,7 @@ const Education = () => (
               <span>&bull;</span>
               <em className="date">May 2015</em>
             </h3>
-            <h5>Minor: Digital Filmmaking</h5>
+            <h4>Minor: Digital Filmmaking</h4>
           </p>
 
           <p>
