@@ -2,49 +2,56 @@ import React from "react";
 import { FaCloudDownload } from "react-icons/lib/fa";
 
 import profilePic from "../assets/images/profilepic.jpg";
+import profilePic2 from "../assets/images/profilepic2.jpg";
+import profilePic3 from "../assets/images/profilepic3.jpg";
+import profilePic4 from "../assets/images/profilepic4.jpg";
 
 const About = () => (
   <section id="about">
     <div className="row">
       <div className="three columns">
         <img className="profile-pic" src={profilePic} alt="" />
+        <img className="profile-pic" src={profilePic2} alt="" />
+        <img className="profile-pic" src={profilePic3} alt="" />
+        <img className="profile-pic" src={profilePic4} alt="" />
       </div>
       <div className="nine columns main-col">
         <h2>About Me</h2>
         <p>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-          ab illo inventore veritatis et quasi architecto beatae vitae dicta
-          sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-          aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-          qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
-          dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
-          quia non numquam eius modi tempora incidunt ut labore et dolore magnam
-          aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
-          exercitationem ullam corporis suscipit laboriosam.
+          For the last 15 years I've eaten, slept and breathed music, from
+          playing in multiple bands to being an all around concert addict and
+          everything in between. Ultimately, this led me to Ramapo College of
+          New Jersey where I graduated in 2015 with a B.A. in Music Production
+          and Audio Engineering. After a few years of freelancing around New
+          Jersey it was time for a new challenge.
+        </p>
+        <p>
+          Realizing my passion for web development, I pivoted career paths,
+          enrolled in the Rutgers Coding Bootcamp for Full Stack Development,
+          and haven’t looked back. My current pet project is a music streaming
+          service geared towards unknown and unsigned local bands built in
+          modern javascript (MongoDB, Express, React, Node, and GraphQL) but
+          when I’m not working on websites and web apps, you can usually find me
+          in the pit singing along to every word of my favorite songs.
         </p>
         <div className="row">
           <div className="columns contact-details">
             <h2>Contact Details</h2>
             <p className="address">
-              <span>Jonathan Doe</span>
+              <span>Matt Mahler</span>
               <br />
               <span>
-                1600 Amphitheatre Parkway
-                <br /> Mountain View, CA 94043 US
+                56 Laidlaw Ave
+                <br /> Jersey City, NJ 07306 US
               </span>
               <br />
-              <span>(123)456-7890</span>
+              <span>(908)-217-1194</span>
               <br />
-              <span>anyone@website.com</span>
+              <span>matthewjamesmahler@gmail.com</span>
             </p>
           </div>
           <div className="columns download">
-            <p>
-              <a href="#" className="button">
-                <FaCloudDownload /> Download Resume
-              </a>
-            </p>
+            <p />
           </div>
         </div>
       </div>

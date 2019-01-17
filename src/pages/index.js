@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "gatsby-link";
 
 import "../assets/css/main.css";
 
@@ -14,8 +13,8 @@ const IndexPage = () => (
   <div>
     <Header />
     <About />
-    <Resume />
     <Portfolio />
+    <Resume />
     <Testimonials />
     <Footer />
   </div>
