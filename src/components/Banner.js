@@ -7,7 +7,7 @@ const Banner = () => (
       <h1 className="responsive-headline">Hi, I'm Matt.</h1>
       <h3>
         I am a <span>music producer, </span>
-        <span>audio engineer, </span> <span>and multi-istrumentalist </span>
+        <span>audio engineer, </span> <span>and multi-instrumentalist </span>
         turned
         <span className="job-title"> Full Stack Web Developer. </span>
         I'm making awesome sites and apps for the modern web with creative tech.
