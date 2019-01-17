@@ -11,41 +11,62 @@ const Work = () => (
     <div className="nine columns main-col">
       <div className="row item">
         <div className="twelve columns">
-          <h3>Awesome Design Studio</h3>
+          <h2>Achim Importing</h2>
           <p className="info">
-            Senior UX Designer
-            <span>&bull;</span>
-            <em className="date">March 2010 - Present</em>
+            <h3>
+              Junior Developer
+              <span>&bull;</span>
+              <em className="date">2017 - Present</em>
+            </h3>
           </p>
 
           <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-            Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
-            aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede
-            mollis pretium.
+            <ul>
+              <li>
+                Built Web GUI on ASP.NET to track inventory changes in real time
+                using HTML5, CSS3, and ES6/JQuery
+              </li>
+              <li>
+                Developed an enterprise-level SQL Server-based application
+              </li>
+              <li>Wrote and maintained ad hoc SQL queries </li>
+              <li>Executed data validation and data conversion</li>
+              <li>
+                Workstation setup, networking and technical infrastructure
+              </li>
+            </ul>
           </p>
         </div>
       </div>
 
       <div className="row item">
         <div className="twelve columns">
-          <h3>Super Cool Studio</h3>
+          <h2>Headset Inc</h2>
           <p className="info">
-            UX Designer
-            <span>&bull;</span>
-            <em className="date">March 2007 - February 2010</em>
+            <h3>
+              Data Expert
+              <span>&bull;</span>
+              <em className="date">2016 - 2017</em>
+            </h3>
           </p>
 
           <p>
-            This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
-            velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
-            auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-            Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
-            Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a
-            ornare odio. Sed non mauris vitae erat
+            <ul>
+              <li>
+                Linked thousands of products sold in retail locations to an
+                overarching NoSQL database (MongoDB)
+              </li>
+              <li>
+                Q/A tested React.js frontend and filed bug reports/user stories
+              </li>
+              <li>
+                Tracked sales, optimal price points and other data mining
+                analysis
+              </li>
+              <li>
+                Managed quality control of new products created for the database
+              </li>
+            </ul>
           </p>
         </div>
       </div>

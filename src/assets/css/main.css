@@ -1,9 +1,4 @@
 /*
-=====================================================================
-*   Ceevee v1.0 Default Stylesheet
-*   url: styleshout.com
-*   03-17-2014
-=====================================================================
 
 TOC:
 a. Webfonts and Icon fonts
@@ -1340,7 +1335,7 @@ properly.
    d. Resume Section
    e. Portfolio Section
    f. Call To Action Section
-   g. Testimonials Section
+   g. Music Section
    h. Contact Section
    i. Footer
 
@@ -1625,10 +1620,12 @@ ul#nav li.current a {
 /* ------------------------------------------------------------------ */
 
 #resume {
-  background: #fff;
+  background: linear-gradient(#0d0d0d, #2b2b2b);
+
   padding-top: 90px;
   padding-bottom: 72px;
   overflow: hidden;
+  color: #afafaf
 }
 
 #resume a,
@@ -1638,11 +1635,11 @@ ul#nav li.current a {
 
 #resume a:hover,
 #resume a:focus {
-  color: #313131;
+  color: #afafaf;
 }
 
 #resume h1 {
-  font: 18px/24px "opensans-bold", sans-serif;
+  font: 24px/30px "opensans-bold", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -1650,10 +1647,17 @@ ul#nav li.current a {
 #resume h1 span {
   border-bottom: 3px solid #11abb0;
   padding-bottom: 6px;
+  color: #afafaf;
+}
+
+#resume h2 {
+  font: 18px/24px "opensans-bold", sans-serif;
+  color: #afafaf;
 }
 
 #resume h3 {
-  font: 25px/30px "opensans-bold", sans-serif;
+  font: 16px/20px "opensans-bold", sans-serif;
+  color: #afafaf;
 }
 
 #resume .header-col {
@@ -1671,9 +1675,24 @@ ul#nav li.current a {
   border-bottom: 1px solid #e8e8e8;
 }
 
+.education ul,
+.work ul {
+  margin-left: 16px;
+  list-style-type: square;
+}
+
+.education ul li:hover,
+.work ul li:hover {
+  color: #39b1ff;
+  font-size: 110%;
+
+  transition: 0.1s;
+
+}
+
 #resume .info {
 
-  color: #6e7881;
+  color: #afafaf;
   margin-bottom: 18px;
   margin-top: 9px;
 }
@@ -1707,14 +1726,14 @@ ul#nav li.current a {
 .bars li {
   position: relative;
   margin-bottom: 60px;
-  background: #ccc;
+  background: #000;
   height: 42px;
   border-radius: 3px;
 }
 
 .bars li em {
   font: 15px "opensans-bold", sans-serif;
-  color: #313131;
+  color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: normal;
@@ -1729,44 +1748,28 @@ ul#nav li.current a {
 
   margin: 0;
   padding-right: 24px;
-  background: #313131;
+  background: #fff;
   display: inline-block;
   height: 42px;
   line-height: 42px;
   border-radius: 3px 0 0 3px;
 }
 
-.photoshop {
-  width: 60%;
-  -moz-animation: photoshop 2s ease;
-  -webkit-animation: photoshop 2s ease;
-}
 
-.illustrator {
-  width: 55%;
-  -moz-animation: illustrator 2s ease;
-  -webkit-animation: illustrator 2s ease;
-}
 
-.wordpress {
-  width: 50%;
-  -moz-animation: wordpress 2s ease;
-  -webkit-animation: wordpress 2s ease;
-}
-
-.css {
-  width: 90%;
+.good {
+  width: 95%;
   -moz-animation: css 2s ease;
   -webkit-animation: css 2s ease;
 }
 
-.html5 {
-  width: 80%;
+.decent {
+  width: 70%;
   -moz-animation: html5 2s ease;
   -webkit-animation: html5 2s ease;
 }
 
-.jquery {
+.meh {
   width: 50%;
   -moz-animation: jquery 2s ease;
   -webkit-animation: jquery 2s ease;
@@ -1917,6 +1920,11 @@ ul#nav li.current a {
 /* Portfolio Content */
 #portfolio-wrapper .columns {
   margin-bottom: 36px;
+  background-color: #1f1f1fb2;
+  padding: 15px;
+  border: #1f1f1f solid 2px;
+  border-radius: 5px;
+
 }
 
 .portfolio-item .item-wrap {
@@ -2180,11 +2188,12 @@ call-to-action .button {
 }
 
 /* ------------------------------------------------------------------
-/* g. Testimonials
+/* g. Music
 /* ------------------------------------------------------------------ */
 
-#testimonials {
-  background: #1f1f1f url(../images/testimonials-bg.jpg) no-repeat center center;
+#music {
+  background: linear-gradient(rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)), #1f1f1f url(../images/music-bg.jpg) no-repeat center center;
   background-size: cover !important;
   -webkit-background-size: cover !important;
   background-attachment: fixed;
@@ -2195,27 +2204,28 @@ call-to-action .button {
   overflow: hidden;
 }
 
-#testimonials .text-container {
+#music .text-container {
   padding-top: 96px;
   padding-bottom: 66px;
 }
 
-#testimonials h1 {
-  font: 18px/24px "opensans-bold", sans-serif;
+#music h1 {
+  font: 24px/30px "opensans-bold", sans-serif;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #fff;
 }
 
-#testimonials h1 span {
+#music h1 span {
   display: none;
 }
 
-#testimonials .header-col {
+#music .header-col {
   padding-top: 9px;
 }
 
-#testimonials .header-col h1:before {
+#music .header-col h1:before {
   font-family: "FontAwesome";
   content: "\f10d";
   padding-right: 10px;
@@ -2227,18 +2237,18 @@ call-to-action .button {
 }
 
 /*	Blockquotes */
-#testimonials blockquote {
+#music blockquote {
   margin: 0 0px 30px 0px;
   padding-left: 0;
   position: relative;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
 }
 
-#testimonials blockquote:before {
+#music blockquote:before {
   content: none;
 }
 
-#testimonials blockquote p {
+#music blockquote p {
   font-family: "librebaskerville-italic", serif;
   padding: 0;
   font-size: 24px;
@@ -2246,7 +2256,7 @@ call-to-action .button {
   color: #fff;
 }
 
-#testimonials blockquote cite {
+#music blockquote cite {
   display: block;
   font-size: 12px;
   font-style: normal;
@@ -2254,12 +2264,12 @@ call-to-action .button {
   color: #fff;
 }
 
-#testimonials blockquote cite:before {
+#music blockquote cite:before {
   content: "\2014 \0020";
 }
 
-#testimonials blockquote cite a,
-#testimonials blockquote cite a:visited {
+#music blockquote cite a,
+#music blockquote cite a:visited {
   color: #8b9798;
   border: none;
 }
@@ -2740,14 +2750,14 @@ footer .social li:first-child {
     padding-right: 5%;
   }
 
-  /* Testimonials Section
+  /* Music Section
  ------------------------------------------------------------------- */
-  #testimonials .header-col h1:before {
+  #music .header-col h1:before {
     font-size: 66px;
     line-height: 66px;
   }
 
-  #testimonials blockquote p {
+  #music blockquote p {
     font-size: 22px;
     line-height: 46px;
   }
@@ -2993,32 +3003,32 @@ footer .social li:first-child {
   }
 
 
-  /* Testimonials Section
+  /* Music Section
  ----------------------------------------------------------------------- */
-  #testimonials .text-container {
+  #music .text-container {
     text-align: center;
   }
 
-  #testimonials h1 {
+  #music h1 {
     font: 16px/24px 'opensans-bold', sans-serif;
     text-align: center;
     margin-bottom: 30px;
     text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
   }
 
-  #testimonials h1 span {
+  #music h1 span {
     display: block;
   }
 
-  #testimonials .header-col h1:before {
+  #music .header-col h1:before {
     content: none;
   }
 
-  #testimonials blockquote {
+  #music blockquote {
     padding-bottom: 24px;
   }
 
-  #testimonials blockquote p {
+  #music blockquote p {
     font-size: 20px;
     line-height: 42px;
   }

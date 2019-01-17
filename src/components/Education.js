@@ -11,41 +11,49 @@ const Education = () => (
     <div className="nine columns main-col">
       <div className="row item">
         <div className="twelve columns">
-          <h3>University of Life</h3>
+          <h2>Rutgers University: Department of Continuing Studies</h2>
           <p className="info">
-            Master in Graphic Design
-            <span>&bull;</span>
-            <em className="date">April 2007</em>
+            <h3>
+              Certification in Full Stack Web Development
+              <span>&bull;</span>
+              <em className="date">2018</em>
+            </h3>
           </p>
 
           <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-            Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
-            aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede
-            mollis pretium.
+            Computer Science applied to web development:
+            <ul>
+              <li>MERN stack (MongoDB, Express, Node, React)</li>
+              <li>GraphQL, Apollo, RESTful APIs, JWT Authentication</li>
+              <li>Jest, Enzyme, Prisma</li>
+              <li>MySQL, Next.js, SEO, Semantic HTML</li>
+              <li>Styled Components, CSS Modules</li>
+              <li>HTML5, CSS3, ES5, ES6, jQuery, and AJAX</li>
+            </ul>
           </p>
         </div>
       </div>
-
       <div className="row item">
         <div className="twelve columns">
-          <h3>School of Cool Designers</h3>
+          <h2>Ramapo College of New Jersey</h2>
           <p className="info">
-            B.A. Degree in Graphic Design
-            <span>&bull;</span>
-            <em className="date">March 2003</em>
+            <h3>
+              B.A. in Music Production and Audio Engineering
+              <span>&bull;</span>
+              <em className="date">May 2015</em>
+            </h3>
+            <h5>Minor: Digital Filmmaking</h5>
           </p>
 
           <p>
-            This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
-            velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
-            auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-            Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
-            Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a
-            ornare odio. Sed non mauris vitae erat
+            Key Courses:
+            <ul>
+              <li>Recording Arts 1-3</li>
+              <li>Electronic and Computer Music</li>
+              <li>Live Audio Engineering and Recording</li>
+              <li>Fundamentals of Digital Filmmaking</li>
+              <li>Digital Post Production</li>
+            </ul>
           </p>
         </div>
       </div>
