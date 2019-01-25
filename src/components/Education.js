@@ -15,7 +15,7 @@ const Education = () => (
           <p className="info">
             <h3>
               Certification in Full Stack Web Development
-              <span>&bull;</span>
+              <span> &bull; </span>
               <em className="date">2018</em>
             </h3>
           </p>
@@ -39,7 +39,7 @@ const Education = () => (
           <p className="info">
             <h3>
               B.A. in Music Production and Audio Engineering
-              <span>&bull;</span>
+              <span> &bull; </span>
               <em className="date">May 2015</em>
             </h3>
             <h4>Minor: Digital Filmmaking</h4>

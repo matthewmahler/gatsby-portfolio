@@ -15,7 +15,7 @@ const Work = () => (
           <p className="info">
             <h3>
               Junior Developer
-              <span>&bull;</span>
+              <span> &bull; </span>
               <em className="date">2017 - Present</em>
             </h3>
           </p>
@@ -23,8 +23,8 @@ const Work = () => (
           <p>
             <ul>
               <li>
-                Built Web GUI on ASP.NET to track inventory changes in real time
-                using HTML5, CSS3, and ES6/JQuery
+                Built Web GUI to track inventory changes in real time using
+                React (16.6), Express, and Node
               </li>
               <li>
                 Developed an enterprise-level SQL Server-based application
@@ -45,7 +45,7 @@ const Work = () => (
           <p className="info">
             <h3>
               Data Expert
-              <span>&bull;</span>
+              <span> &bull; </span>
               <em className="date">2016 - 2017</em>
             </h3>
           </p>
