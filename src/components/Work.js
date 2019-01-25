@@ -23,7 +23,7 @@ const Work = () => (
           <p>
             <ul>
               <li>
-                Built Web GUI to track inventory changes in real time using
+                Built a Web GUI to track inventory changes in real time using
                 React (16.6), Express, and Node
               </li>
               <li>
