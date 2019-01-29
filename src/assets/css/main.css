@@ -2219,7 +2219,7 @@ call-to-action .button {
 }
 
 #music h1 {
-  font: 24px/30px "opensans-bold", sans-serif;
+  font: 30px/36px "opensans-bold", sans-serif;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -2230,57 +2230,9 @@ call-to-action .button {
   display: none;
 }
 
-#music .header-col {
-  padding-top: 9px;
-}
-
-#music .header-col h1:before {
-  font-family: "FontAwesome";
-  content: "\f10d";
-  padding-right: 10px;
-  font-size: 72px;
-  line-height: 72px;
-  text-align: left;
-  float: left;
-  color: #fff;
-}
-
-/*	Blockquotes */
-#music blockquote {
-  margin: 0 0px 30px 0px;
-  padding-left: 0;
-  position: relative;
-  text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
-}
-
-#music blockquote:before {
-  content: none;
-}
-
-#music blockquote p {
-  font-family: "librebaskerville-italic", serif;
-  padding: 0;
-  font-size: 24px;
-  line-height: 48px;
-  color: #fff;
-}
-
-#music blockquote cite {
-  display: block;
-  font-size: 12px;
-  font-style: normal;
-  line-height: 18px;
-  color: #fff;
-}
-
-#music blockquote cite:before {
-  content: "\2014 \0020";
-}
-
-#music blockquote cite a,
-#music blockquote cite a:visited {
-  color: #8b9798;
-  border: none;
+#music .row {
+  display: flex;
+  justify-content: space-around;
 }
 
 /* Flex Slider
@@ -3015,7 +2967,8 @@ footer .social li:first-child {
   /* Music Section
  ----------------------------------------------------------------------- */
   #music .text-container {
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
   }
 
   #music h1 {
@@ -3033,14 +2986,7 @@ footer .social li:first-child {
     content: none;
   }
 
-  #music blockquote {
-    padding-bottom: 24px;
-  }
 
-  #music blockquote p {
-    font-size: 20px;
-    line-height: 42px;
-  }
 
   /* Control Nav */
   .flex-control-nav {

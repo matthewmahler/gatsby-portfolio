@@ -10,13 +10,11 @@ const settings = {
   slideToScroll: 1,
   swipeToSlide: true
 };
-const photos = [];
 
 const Music = () => (
   <section id="music">
     <div className="text-container">
       <div className="row">
-        <div className="two columns header-col" />
         <div className="ten columns">
           <h1>My Music</h1>
           <ul>
