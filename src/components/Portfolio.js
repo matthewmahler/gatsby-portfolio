@@ -14,7 +14,7 @@ class Portfolio extends Component {
       url: "https://api.github.com/graphql",
       method: "post",
       headers: {
-        Authorization: `bearer 1c446b0290cc7bc4d6a8c6496f3665ba4dd22158`
+        Authorization: `bearer 299c3411966f9b456dfcc7eac1c3e60f9f31b03b`
       },
       data: {
         query: `
