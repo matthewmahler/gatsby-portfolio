@@ -1917,7 +1917,7 @@ ul#nav li.current a {
 }
 
 #portfolio h1 {
-  font: 20px/28px "opensans-semibold", sans-serif;
+  font: 30px/36px "opensans-semibold", sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: center;
@@ -2816,13 +2816,25 @@ footer .social li:first-child {
 
   /* Portfolio Section
  /* ----------------------------------------------------------------- */
-  #portfolio-wrapper .columns {
+
+
+  #portfolio-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
     margin-bottom: 40px;
   }
 
-  .popup-modal {
-    max-width: 85%;
+  #portfolio-wrapper h1 {
+    font: 16px/24px 'opensans-bold', sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
   }
+
+  #portfolio-wrapper::before {
+    display: none;
+  }
+
 
 
   /* Music Section
