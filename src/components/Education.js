@@ -12,15 +12,15 @@ const Education = () => (
       <div className="row item">
         <div className="twelve columns">
           <h2>Rutgers University: Department of Continuing Studies</h2>
-          <p className="info">
+          <div className="info">
             <h3>
               Certification in Full Stack Web Development
               <span> &bull; </span>
-              <em className="date">2018</em>
+              2018
             </h3>
-          </p>
+          </div>
 
-          <p>
+          <div>
             Computer Science applied to web development:
             <ul>
               <li>MERN stack (MongoDB, Express, Node, React)</li>
@@ -30,22 +30,22 @@ const Education = () => (
               <li>Styled Components, CSS Modules</li>
               <li>HTML5, CSS3, ES5, ES6, jQuery, and AJAX</li>
             </ul>
-          </p>
+          </div>
         </div>
       </div>
       <div className="row item">
         <div className="twelve columns">
           <h2>Ramapo College of New Jersey</h2>
-          <p className="info">
+          <div className="info">
             <h3>
               B.A. in Music Production and Audio Engineering
               <span> &bull; </span>
-              <em className="date">May 2015</em>
+              May 2015
             </h3>
             <h4>Minor: Digital Filmmaking</h4>
-          </p>
+          </div>
 
-          <p>
+          <div>
             Key Courses:
             <ul>
               <li>Recording Arts 1-3</li>
@@ -54,7 +54,7 @@ const Education = () => (
               <li>Fundamentals of Digital Filmmaking</li>
               <li>Digital Post Production</li>
             </ul>
-          </p>
+          </div>
         </div>
       </div>
     </div>

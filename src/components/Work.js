@@ -12,15 +12,15 @@ const Work = () => (
       <div className="row item">
         <div className="twelve columns">
           <h2>Achim Importing</h2>
-          <p className="info">
+          <div className="info">
             <h3>
               Junior Developer
               <span> &bull; </span>
-              <em className="date">2017 - Present</em>
+              2017 - Present
             </h3>
-          </p>
+          </div>
 
-          <p>
+          <div>
             <ul>
               <li>
                 Built a Web GUI to track inventory changes in real time using
@@ -35,22 +35,22 @@ const Work = () => (
                 Workstation setup, networking and technical infrastructure
               </li>
             </ul>
-          </p>
+          </div>
         </div>
       </div>
 
       <div className="row item">
         <div className="twelve columns">
           <h2>Headset Inc</h2>
-          <p className="info">
+          <div className="info">
             <h3>
               Data Expert
               <span> &bull; </span>
-              <em className="date">2016 - 2017</em>
+              2016 - 2017
             </h3>
-          </p>
+          </div>
 
-          <p>
+          <div>
             <ul>
               <li>
                 Linked thousands of products sold in retail locations to an
@@ -67,7 +67,7 @@ const Work = () => (
                 Managed quality control of new products created for the database
               </li>
             </ul>
-          </p>
+          </div>
         </div>
       </div>
     </div>

@@ -25,9 +25,8 @@ const Music = () => (
                   src="https://open.spotify.com/embed/artist/4TWQJppHQYlY4FlzuvEDUc"
                   width="100%"
                   height="400"
-                  frameborder="0"
-                  allowtransparency="true"
-                  allow="encrypted-media"
+                  frameBorder="0"
+                  allowTransparency="true"
                 />
               </li>
               <li>
@@ -36,9 +35,8 @@ const Music = () => (
                   src="https://open.spotify.com/embed/artist/6a0A3HMwpFmUJwZ39VfgO5"
                   width="100%"
                   height="400"
-                  frameborder="0"
-                  allowtransparency="true"
-                  allow="encrypted-media"
+                  frameBorder="0"
+                  allowTransparency="true"
                 />
               </li>
             </Slider>

@@ -1,104 +1,82 @@
-import React from "react";
-import { FaPlus, FaTag } from "react-icons/lib/fa";
+import PortfolioCard from "./PortfolioCard";
+import axios from "axios";
 
-import SickFits from "../assets/images/portfolio/sickfits.png";
-import Overwatch from "../assets/images/portfolio/ow.png";
-import Spotify from "../assets/images/portfolio/play.png";
-import Here from "../assets/images/portfolio/here.png";
+import React, { Component } from "react";
 
-const Portfolio = () => (
-  <section id="portfolio">
-    <div className="row">
-      <div className="twelve columns collapsed">
-        <h1>Check Out Some of My Works.</h1>
+class Portfolio extends Component {
+  state = {
+    data: null,
+    isLoading: true
+  };
 
-        <div
-          id="portfolio-wrapper"
-          className="bgrid-quarters s-bgrid-thirds cf"
-        >
-          <div className="columns portfolio-item">
-            <div className="item-wrap">
-              <a
-                href="https://github.com/matthewmahler/sick-fits"
-                target="_blank"
-              >
-                <img alt="" src={SickFits} />
-                <div className="overlay">
-                  <div className="portfolio-item-meta">
-                    <h5>Sick-Fits</h5>
-                    <p>React / GraphQL / Prisma</p>
-                  </div>
-                </div>
-                <div className="link-icon">
-                  <FaPlus />
-                </div>
-              </a>
-            </div>
-          </div>
+  componentDidMount() {
+    axios({
+      url: "https://api.github.com/graphql",
+      method: "post",
+      headers: {
+        Authorization: `bearer 1c446b0290cc7bc4d6a8c6496f3665ba4dd22158`
+      },
+      data: {
+        query: `
+        query{
+          repositoryOwner(login: "matthewmahler") {
+            ... on User {
+              pinnedRepositories(first: 6) {
+                edges {
+                  node {
+                    name
+                    description
+                    pushedAt
+                    url
+                    primaryLanguage {
+                      name
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }`
+      }
+    }).then(result => {
+      this.setState({
+        data: result.data.data.repositoryOwner.pinnedRepositories.edges,
+        isLoading: false
+      });
+    });
+  }
 
-          <div className="columns portfolio-item">
-            <div className="item-wrap">
-              <a
-                href="https://github.com/matthewmahler/Overlynics"
-                target="_blank"
-              >
-                <img alt="" src={Overwatch} />
-                <div className="overlay">
-                  <div className="portfolio-item-meta">
-                    <h5>Overlynics</h5>
-                    <p>React / Node / MongoDB</p>
-                  </div>
-                </div>
-                <div className="link-icon">
-                  <FaPlus />
-                </div>
-              </a>
-            </div>
-          </div>
+  render() {
+    return (
+      <section id="portfolio">
+        <div className="row">
+          <div className="twelve columns collapsed">
+            <h1>Check Out Some of My Works.</h1>
 
-          <div className="columns portfolio-item">
-            <div className="item-wrap">
-              <a
-                href="https://github.com/matthewmahler/spotify-clone"
-                target="_blank"
-              >
-                <img alt="" src={Spotify} />
-                <div className="overlay">
-                  <div className="portfolio-item-meta">
-                    <h5>Slotify</h5>
-                    <p>PhP / MySQL / jQuery</p>
-                  </div>
-                </div>
-                <div className="link-icon">
-                  <FaPlus />
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div className="columns portfolio-item">
-            <div className="item-wrap">
-              <a
-                href="https://github.com/matthewmahler/gatsby-portfolio"
-                target="_blank"
-              >
-                <img alt="" src={Here} />
-                <div className="overlay">
-                  <div className="portfolio-item-meta">
-                    <h5>This Portfolio</h5>
-                    <p>React / Gatsby / Netlify</p>
-                  </div>
-                </div>
-                <div className="link-icon">
-                  <FaPlus />
-                </div>
-              </a>
+            <div
+              id="portfolio-wrapper"
+              className="bgrid-quarters s-bgrid-thirds cf"
+            >
+              {this.state.isLoading == false ? (
+                this.state.data.map((repo, i) => (
+                  <PortfolioCard
+                    key={i}
+                    name={repo.node.name}
+                    description={repo.node.description}
+                    url={repo.node.url}
+                    pushedAt={repo.node.pushedAt}
+                    language={repo.node.primaryLanguage.name}
+                  />
+                ))
+              ) : (
+                <h2 className="loading">...LOADING...</h2>
+              )}
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-);
+      </section>
+    );
+  }
+}
 
 export default Portfolio;
