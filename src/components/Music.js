@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const Music = () => (
   <section id="music">
@@ -14,7 +14,6 @@ const Music = () => (
                 width="100%"
                 height="400"
                 frameBorder="0"
-                allowTransparency="true"
               />
             </div>
             <div>
@@ -24,7 +23,6 @@ const Music = () => (
                 width="100%"
                 height="400"
                 frameBorder="0"
-                allowTransparency="true"
               />
             </div>
           </div>
@@ -32,6 +30,6 @@ const Music = () => (
       </div>
     </div>
   </section>
-);
+)
 
-export default Music;
+export default Music

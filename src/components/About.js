@@ -1,10 +1,9 @@
-import React from "react";
-import { FaCloudDownload } from "react-icons/lib/fa";
+import React from "react"
 
-import profilePic from "../assets/images/profilepic.jpg";
-import profilePic2 from "../assets/images/profilepic2.jpg";
-import profilePic3 from "../assets/images/profilepic3.jpg";
-import profilePic4 from "../assets/images/profilepic4.jpg";
+import profilePic from "../images/profilepic.jpg"
+import profilePic2 from "../images/profilepic2.jpg"
+import profilePic3 from "../images/profilepic3.jpg"
+import profilePic4 from "../images/profilepic4.jpg"
 
 const About = () => (
   <section id="about">
@@ -57,6 +56,6 @@ const About = () => (
       </div>
     </div>
   </section>
-);
+)
 
-export default About;
+export default About

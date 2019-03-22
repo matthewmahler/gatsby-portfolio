@@ -1,10 +1,10 @@
-import React from "react";
-import icon1 from "../assets/images/icons/svg-react-5.png";
-import icon2 from "../assets/images/icons/nodejs-png-part-4-node-js-execution-time-800.png";
-import icon3 from "../assets/images/icons/expressjslogo.png";
-import icon4 from "../assets/images/icons/mongodb.png";
+import React from "react"
+import icon1 from "../images/icons/svg-react-5.png"
+import icon2 from "../images/icons/nodejs-png-part-4-node-js-execution-time-800.png"
+import icon3 from "../images/icons/expressjslogo.png"
+import icon4 from "../images/icons/mongodb.png"
 
-const photos = [icon1, icon2, icon3, icon4];
+const photos = [icon1, icon2, icon3, icon4]
 
 const Skills = () => (
   <div className="row skill">
@@ -20,7 +20,7 @@ const Skills = () => (
       </p>
       <div className="lang">
         {photos.map((pic, i) => {
-          return <img src={pic} alt="" width="100%" key={i} />;
+          return <img src={pic} alt="" width="100%" key={i} />
         })}
       </div>
     </div>
@@ -64,6 +64,6 @@ const Skills = () => (
       </div>
     </div>
   </div>
-);
+)
 
-export default Skills;
+export default Skills

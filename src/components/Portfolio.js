@@ -1,20 +1,20 @@
-import PortfolioCard from "./PortfolioCard";
-import axios from "axios";
+import PortfolioCard from "./PortfolioCard"
+import axios from "axios"
 
-import React, { Component } from "react";
+import React, { Component } from "react"
 
 class Portfolio extends Component {
   state = {
     data: null,
-    isLoading: true
-  };
+    isLoading: true,
+  }
 
   componentDidMount() {
     axios({
       url: "https://api.github.com/graphql",
       method: "post",
       headers: {
-        Authorization: `bearer ${process.env.GATSBY_GITHUB_TOKEN}`
+        Authorization: `bearer ${process.env.GATSBY_GITHUB_TOKEN}`,
       },
       data: {
         query: `
@@ -36,14 +36,14 @@ class Portfolio extends Component {
               }
             }
           }
-        }`
-      }
+        }`,
+      },
     }).then(result => {
       this.setState({
         data: result.data.data.repositoryOwner.pinnedRepositories.edges,
-        isLoading: false
-      });
-    });
+        isLoading: false,
+      })
+    })
   }
 
   render() {
@@ -57,7 +57,7 @@ class Portfolio extends Component {
               id="portfolio-wrapper"
               className="bgrid-quarters s-bgrid-thirds cf"
             >
-              {this.state.isLoading == false ? (
+              {this.state.isLoading === false ? (
                 this.state.data.map((repo, i) => (
                   <PortfolioCard
                     key={i}
@@ -75,8 +75,8 @@ class Portfolio extends Component {
           </div>
         </div>
       </section>
-    );
+    )
   }
 }
 
-export default Portfolio;
+export default Portfolio
