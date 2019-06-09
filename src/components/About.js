@@ -1,12 +1,64 @@
 import React from "react"
-
+import styled from "styled-components"
+import bg from "../images/about-background2.jpg"
 import profilePic from "../images/profilepic.jpg"
 import profilePic2 from "../images/profilepic2.jpg"
 import profilePic3 from "../images/profilepic3.jpg"
 import profilePic4 from "../images/profilepic4.jpg"
 
+const AboutContainer = styled.section`
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url(${bg}) no-repeat top center;
+  background-size: cover !important;
+  padding-top: 96px;
+  padding-bottom: 66px;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  a,
+  a:visited {
+    color: #fff;
+  }
+
+  a:hover,
+  a:focus {
+    color: #11abb0;
+  }
+  h1 {
+    font: 30/38px "opensans-bold", sans-serif;
+    color: #39b1ff;
+  }
+  h2 {
+    font: 22px/30px "opensans-bold", sans-serif;
+    color: #39b1ff;
+    margin-bottom: 12px;
+  }
+
+  p {
+    line-height: 30px;
+    color: #afafaf;
+  }
+
+  .profile-pic {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+  }
+
+  .contact-details {
+    width: 50%;
+  }
+
+  .main-col {
+    padding-right: 5%;
+  }
+`
+
 const About = () => (
-  <section id="about">
+  <AboutContainer id="about">
     <div className="row">
       <div className="three columns">
         <img className="profile-pic" src={profilePic} alt="" />
@@ -15,7 +67,7 @@ const About = () => (
         <img className="profile-pic" src={profilePic4} alt="" />
       </div>
       <div className="nine columns main-col">
-        <h2>About Me</h2>
+        <h1>About Me</h1>
         <p>
           For the last 15 years I've eaten, slept and breathed music, from
           playing in multiple bands to being an all around concert addict and
@@ -39,23 +91,17 @@ const About = () => (
             <p className="address">
               <span>Matt Mahler</span>
               <br />
-              <span>
-                56 Laidlaw Ave
-                <br /> Jersey City, NJ 07306 US
-              </span>
+              <span>Jersey City, NJ </span>
               <br />
-              <span>(908)-217-1194</span>
+              <span>Phone: (908)-217-1194</span>
               <br />
-              <span>matthewjamesmahler@gmail.com</span>
+              <span>Email: matthewjamesmahler@gmail.com</span>
             </p>
-          </div>
-          <div className="columns download">
-            <p />
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </AboutContainer>
 )
 
 export default About
