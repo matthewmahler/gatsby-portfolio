@@ -10,7 +10,7 @@ const PortfolioContainer = styled.section`
   background-size: cover;
   padding-top: 90px;
   padding-bottom: 60px;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
 
@@ -20,6 +20,7 @@ const PortfolioContainer = styled.section`
     letter-spacing: 0.5px;
     text-align: center;
     margin-bottom: 48px;
+
     color: #39b1ff;
     text-shadow: #154a6d 1px 1px;
     font-weight: 700;
@@ -36,6 +37,13 @@ const PortfolioContainer = styled.section`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 15px;
+  }
+  @media only screen and (max-width: 767px) {
+    #portfolio-wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 15px;
+    }
   }
 
   #portfolio-wrapper::before {

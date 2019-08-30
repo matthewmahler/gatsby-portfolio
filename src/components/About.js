@@ -13,7 +13,7 @@ const AboutContainer = styled.section`
   padding-top: 96px;
   padding-bottom: 66px;
   overflow: hidden;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   a,
